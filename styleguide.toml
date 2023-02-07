@@ -7,22 +7,18 @@
 # This file is included into wemake-preset.
 
 ["setup.cfg".flake8]
-format = "wemake"
 show-source = true
 
 # Plugins:
-max-line-length = 80
+max-line-length = 120
 max-complexity = 6
 
 # darglint:
-docstring-style = "numpy"
+docstring-style = "google"
 
 # Violations:
-ignore = "D100,D104,D401,W504,RST303,RST304,DAR103,DAR203"
-
-["setup.cfg".isort]
-profile = "wemake"
-
+ignore = "D100,D104,D401,W504,RST303,RST304,DAR103,DAR203,E203"
+# E203 is ignored because of https://black.readthedocs.io/en/stable/guides/using_black_with_other_tools.html#id1
 
 [nitpick.files."setup.cfg"]
 comma_separated_values = ["flake8.ignore"]

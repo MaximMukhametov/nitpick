@@ -24,7 +24,6 @@
 
 
 [nitpick.files.present]
-".editorconfig" = "A project should have an editor configuration"
 "CHANGELOG.md" = "A project should have `CHANGELOG.md`"
 "README.md" = "A project should have `README.md`"
 ".gitignore" = "A project should have `.gitignore` file"

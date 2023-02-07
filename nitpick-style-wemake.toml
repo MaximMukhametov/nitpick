@@ -9,9 +9,12 @@ include = [
   "file-structure.toml",
   "flake8.toml",
   # Its contents are over-written in `styleguide.toml`:
-  # "isort.toml",
+  "isort.toml",
   "darglint.toml",
   "mypy.toml",
   "poetry.toml",
   "styleguide.toml"
 ]
+
+["pyproject.toml".tool.black]
+line-length = 120
