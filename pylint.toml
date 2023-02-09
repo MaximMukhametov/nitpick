@@ -6,5 +6,18 @@
 # `pip install nitpick`
 
 # These values should be placed inside `setup.cfg` in your repo:
-["setup.cfg".pylint.format]
+["pyproject.toml".tool.pylint.format]
 max-line-length = 120
+
+["pyproject.toml".tool.pylint.main]
+# A comma-separated list of package or module names from where C extensions may be loaded.
+# Extensions are loading into the active Python interpreter and may run arbitrary code.
+extension-pkg-allow-list = "pydantic"
+
+["pyproject.toml".tool.pylint.basic]
+good-names = "id"
+
+["pyproject.toml".tool.pylint.master]
+load-plugins = "pylint_pydantic"
+ignore="tests"
+
