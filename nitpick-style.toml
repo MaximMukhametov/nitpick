@@ -11,6 +11,7 @@ include = [
   "isort.toml",
   "darglint.toml",
   "mypy.toml",
+  "pylint.toml",
   "poetry.toml",
   "styleguide.toml"
 ]
