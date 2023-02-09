@@ -6,7 +6,7 @@
 # `pip install nitpick`
 
 # These values should be placed inside `setup.cfg` in your repo:
-["setup.cfg".pylint.FORMAT]
+["setup.cfg".pylint.format]
 max-line-length = 120
 
 ["setup.cfg".pylint.MAIN]
