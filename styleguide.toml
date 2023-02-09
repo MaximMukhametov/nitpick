@@ -15,6 +15,7 @@ multiline-quotes = "single"
 
 show-source = true
 classmethod-decorators = "classmethod, validator"
+extend-immutable-calls = "Header, Depends"
 
 # Plugins:
 max-line-length = 120
