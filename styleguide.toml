@@ -9,6 +9,10 @@
 ["setup.cfg".flake8]
 exclude = "src/tests"
 
+docstring-quotes = "double"
+inline-quotes = "double"
+multiline-quotes = "single"
+
 show-source = true
 classmethod-decorators = "classmethod, validator"
 
