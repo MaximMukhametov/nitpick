@@ -7,7 +7,10 @@
 # This file is included into wemake-preset.
 
 ["setup.cfg".flake8]
+exclude = "src/tests"
+
 show-source = true
+classmethod-decorators = "classmethod, validator"
 
 # Plugins:
 max-line-length = 120
@@ -17,7 +20,7 @@ max-complexity = 6
 docstring-style = "google"
 
 # Violations:
-ignore = "D100,D104,D401,W504,RST303,RST304,DAR103,DAR203,E203"
+ignore = "D104,W504,RST303,RST304,DAR103,DAR203,E203, WPS428, WPS110, WPS306, WPS115, WPS305, WPS221, WPS600, WPS432, WPS400, WPS404"
 # E203 is ignored because of https://black.readthedocs.io/en/stable/guides/using_black_with_other_tools.html#id1
 
 [nitpick.files."setup.cfg"]

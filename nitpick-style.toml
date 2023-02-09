@@ -1,13 +1,22 @@
-# Default style file for nitpick
-# and `wemake-python-styleguide` users:
+# `wemake` style file for nitpick
 # https://raw.githubusercontent.com/andreoliwa/nitpick/v0.18.0/nitpick-style.toml
 
 [nitpick]
-minimum_version = "0.21.0"
+minimum_version = "0.29.0"
 
 [nitpick.styles]
 include = [
+  "file-structure.toml",
   "flake8.toml",
   "isort.toml",
-  "darglint.toml"
+  "darglint.toml",
+  "mypy.toml",
+  "poetry.toml",
+  "styleguide.toml"
 ]
+
+["pyproject.toml".tool.black]
+line-length = 120
+
+["pyproject.toml".tool.poetry.group.dev-dependencies]
+pylint = "^2.15.10"
